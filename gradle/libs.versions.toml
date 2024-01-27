@@ -3,7 +3,9 @@ app-version = "1.0-SNAPSHOT"
 clikt = "4.2.2"
 jdk = "17"
 kotlin = "1.9.21"
+retrofit = "2.9.0"
 
 [libraries]
 clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }

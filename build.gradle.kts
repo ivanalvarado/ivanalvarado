@@ -16,6 +16,7 @@ application {
 
 dependencies {
     implementation(libs.clikt)
+    implementation(libs.retrofit)
     testImplementation(libs.kotlin.test)
 }
 
