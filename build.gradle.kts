@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.21"
+    kotlin("jvm") version libs.versions.kotlin.get()
 }
 
 group = "com.ivanalvarado"
@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     implementation(libs.clikt)
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    testImplementation(libs.kotlin.test)
 }
 
 tasks.test {
