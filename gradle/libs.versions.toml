@@ -3,9 +3,12 @@ app-version = "1.0-SNAPSHOT"
 clikt = "4.2.2"
 jdk = "17"
 kotlin = "1.9.21"
+moshi = "1.15.0"
 retrofit = "2.9.0"
 
 [libraries]
 clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
