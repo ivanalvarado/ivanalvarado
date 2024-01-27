@@ -2,7 +2,7 @@ plugins {
     kotlin("jvm") version "1.9.21"
 }
 
-group = "org.example"
+group = "com.ivanalvarado"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -10,12 +10,14 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.clikt)
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 
 tasks.test {
     useJUnitPlatform()
 }
+
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(libs.versions.jdk.get().toInt())
 }

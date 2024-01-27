@@ -1,0 +1,6 @@
+[versions]
+clikt = "4.2.2"
+jdk = "17"
+
+[libraries]
+clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
