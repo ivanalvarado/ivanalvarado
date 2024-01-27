@@ -1,12 +1,17 @@
 plugins {
     kotlin("jvm") version libs.versions.kotlin.get()
+    application
 }
 
 group = "com.ivanalvarado"
-version = "1.0-SNAPSHOT"
+version = libs.versions.app.version.get()
 
 repositories {
     mavenCentral()
+}
+
+application {
+    mainClass.set("com.ivanalvarado.readme.ReadMeUpdaterCommandKt")
 }
 
 dependencies {
