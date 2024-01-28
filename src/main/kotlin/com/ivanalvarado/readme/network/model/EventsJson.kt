@@ -39,7 +39,9 @@ data class PayloadJson(
     val head: String?,
     val before: String?,
     val commits: List<CommitJson>?,
-    val issue: IssueJson?
+    val issue: IssueJson?,
+    val pull_request: PullRequestJson?,
+    val number: Int?
 )
 
 data class CommitJson(
@@ -109,4 +111,11 @@ data class OrgJson(
     val gravatar_id: String?,
     val url: String?,
     val avatar_url: String?
+)
+
+data class PullRequestJson(
+    val id: Long?,
+    val html_url: String?,
+    val title: String?,
+    val merged: Boolean?
 )

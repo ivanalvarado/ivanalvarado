@@ -43,4 +43,9 @@ sealed class GithubEvent {
         override val repoUrl: String,
         override val createdAt: String
     ): GithubEvent()
+
+     data object UnsupportedEvent : GithubEvent() {
+         override val repoUrl: String = ""
+         override val createdAt: String = ""
+     }
 }
