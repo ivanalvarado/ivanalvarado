@@ -22,11 +22,12 @@ dependencies {
     implementation(libs.okhttp.logging.interceptor)
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.moshi)
+    testImplementation(libs.junit)
     testImplementation(libs.kotlin.test)
 }
 
 tasks.test {
-    useJUnitPlatform()
+    useJUnit()
 }
 
 kotlin {

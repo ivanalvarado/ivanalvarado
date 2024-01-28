@@ -1,121 +1,121 @@
 package com.ivanalvarado.readme.network.model
 
 data class EventsJson(
-    val id: String?,
-    val type: String?,
-    val actor: ActorJson?,
-    val repo: RepoJson?,
-    val payload: PayloadJson?,
-    val public: Boolean?,
-    val created_at: String?,
-    val org: OrgJson?
+    val id: String? = null,
+    val type: String? = null,
+    val actor: ActorJson? = null,
+    val repo: RepoJson? = null,
+    val payload: PayloadJson? = null,
+    val public: Boolean? = null,
+    val created_at: String? = null,
+    val org: OrgJson? = null
 )
 
 data class ActorJson(
-    val id: Int?,
-    val login: String?,
-    val display_login: String?,
-    val gravatar_id: String?,
-    val url: String?,
+    val id: Int? = null,
+    val login: String? = null,
+    val display_login: String? = null,
+    val gravatar_id: String? = null,
+    val url: String? = null,
     val avatar_url: String?
 )
 
 data class RepoJson(
-    val id: Int?,
-    val name: String?,
+    val id: Int? = null,
+    val name: String? = null,
     val url: String?
 )
 
 data class PayloadJson(
-    val action: String?,
-    val push_id: Long?,
-    val size: Int?,
-    val distinct_size: Int?,
-    val ref: String?,
-    val ref_type: String?,
-    val master_branch: String?,
-    val description: String?,
-    val pusher_type: String?,
-    val head: String?,
-    val before: String?,
-    val commits: List<CommitJson>?,
-    val issue: IssueJson?,
-    val pull_request: PullRequestJson?,
-    val number: Int?
+    val action: String? = null,
+    val push_id: Long? = null,
+    val size: Int? = null,
+    val distinct_size: Int? = null,
+    val ref: String? = null,
+    val ref_type: String? = null,
+    val master_branch: String? = null,
+    val description: String? = null,
+    val pusher_type: String? = null,
+    val head: String? = null,
+    val before: String? = null,
+    val commits: List<CommitJson>? = null,
+    val issue: IssueJson? = null,
+    val pull_request: PullRequestJson? = null,
+    val number: Int? = null
 )
 
 data class CommitJson(
-    val sha: String?,
-    val author: AuthorJson?,
-    val message: String?,
-    val distinct: Boolean?,
-    val url: String?
+    val sha: String? = null,
+    val author: AuthorJson? = null,
+    val message: String? = null,
+    val distinct: Boolean? = null,
+    val url: String? = null
 )
 
 data class AuthorJson(
-    val email: String?,
-    val name: String?
+    val email: String? = null,
+    val name: String? = null
 )
 
 data class IssueJson(
-    val url: String?,
-    val repository_url: String?,
-    val labels_url: String?,
-    val comments_url: String?,
-    val events_url: String?,
-    val html_url: String?,
-    val id: Int?,
-    val node_id: String?,
-    val number: Int?,
-    val title: String?,
-    val user: UserJson?,
-    val state: String?,
-    val locked: Boolean?,
-    val assignee: String?,
-    val milestone: String?,
-    val comments: Int?,
-    val created_at: String?,
-    val updated_at: String?,
-    val closed_at: String?,
-    val autho_association: String?,
-    val active_lock_reason: String?,
-    val body: String?,
-    val timeline_url: String?,
+    val url: String? = null,
+    val repository_url: String? = null,
+    val labels_url: String? = null,
+    val comments_url: String? = null,
+    val events_url: String? = null,
+    val html_url: String? = null,
+    val id: Int? = null,
+    val node_id: String? = null,
+    val number: Int? = null,
+    val title: String? = null,
+    val user: UserJson? = null,
+    val state: String? = null,
+    val locked: Boolean? = null,
+    val assignee: String? = null,
+    val milestone: String? = null,
+    val comments: Int? = null,
+    val created_at: String? = null,
+    val updated_at: String? = null,
+    val closed_at: String? = null,
+    val autho_association: String? = null,
+    val active_lock_reason: String? = null,
+    val body: String? = null,
+    val timeline_url: String? = null
 
 )
 
 data class UserJson(
-    val login: String?,
-    val id: Int?,
-    val node_id: String?,
-    val avatar_url: String?,
-    val gravatar_id: String?,
-    val url: String?,
-    val html_url: String?,
-    val followers_url: String?,
-    val following_url: String?,
-    val gists_url: String?,
-    val starred_url: String?,
-    val subscriptions_url: String?,
-    val organizations_url: String?,
-    val repos_url: String?,
-    val events_url: String?,
-    val received_events_url: String?,
-    val type: String?,
-    val site_admin: Boolean?
+    val login: String? = null,
+    val id: Int? = null,
+    val node_id: String? = null,
+    val avatar_url: String? = null,
+    val gravatar_id: String? = null,
+    val url: String? = null,
+    val html_url: String? = null,
+    val followers_url: String? = null,
+    val following_url: String? = null,
+    val gists_url: String? = null,
+    val starred_url: String? = null,
+    val subscriptions_url: String? = null,
+    val organizations_url: String? = null,
+    val repos_url: String? = null,
+    val events_url: String? = null,
+    val received_events_url: String? = null,
+    val type: String? = null,
+    val site_admin: Boolean? = null
 )
 
 data class OrgJson(
-    val id: Int?,
-    val login: String?,
-    val gravatar_id: String?,
-    val url: String?,
-    val avatar_url: String?
+    val id: Int? = null,
+    val login: String? = null,
+    val gravatar_id: String? = null,
+    val url: String? = null,
+    val avatar_url: String? = null
 )
 
 data class PullRequestJson(
-    val id: Long?,
-    val html_url: String?,
-    val title: String?,
-    val merged: Boolean?
+    val id: Long? = null,
+    val html_url: String? = null,
+    val title: String? = null,
+    val merged: Boolean? = null
 )

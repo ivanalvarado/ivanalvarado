@@ -28,7 +28,7 @@ class AdaptToDomain {
                         action = event.payload?.action.orEmpty(),
                         issueNumber = event.payload?.issue?.number ?: 0,
                         title = event.payload?.issue?.title.orEmpty(),
-                        issueUrl = event.payload?.issue?.url.orEmpty(),
+                        issueUrl = event.payload?.issue?.html_url.orEmpty(),
                         repoUrl = event.repo?.url.orEmpty(),
                         createdAt = event.created_at.orEmpty()
                     )

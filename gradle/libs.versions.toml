@@ -2,6 +2,7 @@
 app-version = "1.0-SNAPSHOT"
 clikt = "4.2.2"
 jdk = "17"
+junit = "4.13.1"
 kotlin = "1.9.21"
 kotlinx-coroutines = "1.6.4"
 moshi = "1.15.0"
@@ -10,6 +11,7 @@ retrofit = "2.9.0"
 
 [libraries]
 clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
+junit = { module = "junit:junit", version.ref = "junit" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 moshi = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
