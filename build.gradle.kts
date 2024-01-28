@@ -16,7 +16,12 @@ application {
 
 dependencies {
     implementation(libs.clikt)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.moshi)
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging.interceptor)
     implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.moshi)
     testImplementation(libs.kotlin.test)
 }
 

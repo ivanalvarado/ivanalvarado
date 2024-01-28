@@ -28,17 +28,17 @@ data class RepoJson(
 
 data class PayloadJson(
     val action: String?,
-    val push_id: Int?,
+    val push_id: Long?,
     val size: Int?,
     val distinct_size: Int?,
     val ref: String?,
     val ref_type: String?,
     val master_branch: String?,
     val description: String?,
-    val pusher_type: String,
+    val pusher_type: String?,
     val head: String?,
     val before: String?,
-    val commits: List<CommitJson>,
+    val commits: List<CommitJson>?,
     val issue: IssueJson?
 )
 
