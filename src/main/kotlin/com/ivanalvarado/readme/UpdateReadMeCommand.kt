@@ -3,7 +3,11 @@ package com.ivanalvarado.readme
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.required
-import com.ivanalvarado.readme.network.GithubService
+import com.ivanalvarado.readme.client.AdaptToDomain
+import com.ivanalvarado.readme.client.GithubClientImpl
+import com.ivanalvarado.readme.domain.usecase.AdaptGithubEventsToActivityItemsImpl
+import com.ivanalvarado.readme.domain.usecase.GenerateReadMeTemplateImpl
+import com.ivanalvarado.readme.domain.usecase.GetGithubEventsImpl
 import com.ivanalvarado.readme.network.RetrofitHelper
 import kotlinx.coroutines.runBlocking
 import kotlin.system.exitProcess
@@ -15,14 +19,14 @@ class UpdateReadMeCommand : CliktCommand() {
     private val login: String by option(help = "The login to fetch user events for.").required()
 
     override fun run() {
-        val service = RetrofitHelper.getInstance(apiToken)
         runBlocking {
-            val response = service.userEvents(login)
-            if (response.isSuccessful) {
-                echo("${response.body()}")
-            } else {
-                echo("Failed to fetch")
-            }
+            val service = RetrofitHelper.getInstance(apiToken)
+            val adaptToDomain = AdaptToDomain()
+            val client = GithubClientImpl(service, adaptToDomain)
+            val githubEvents = GetGithubEventsImpl(client)(login)
+            val activityItems = AdaptGithubEventsToActivityItemsImpl()(githubEvents)
+            val newReadMe = GenerateReadMeTemplateImpl()(activityItems)
+            echo(newReadMe)
             exitProcess(0)
         }
     }
