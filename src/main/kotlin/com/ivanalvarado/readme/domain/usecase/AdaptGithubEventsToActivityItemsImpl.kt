@@ -11,13 +11,13 @@ class AdaptGithubEventsToActivityItemsImpl : AdaptGithubEventsToActivityItems {
             when(githubEvent) {
                 is GithubEvent.CreateEvent -> {
                     ActivityItem(
-                        message = "⚡️created ${githubEvent.refType} ${githubEvent.ref} on ${githubEvent.repoUrl}",
+                        message = "⚡️ created ${githubEvent.refType} `${githubEvent.ref}` on ${githubEvent.repoUrl}",
                         date = githubEvent.createdAt.parseDate()
                     )
                 }
                 is GithubEvent.DeleteEvent -> {
                     ActivityItem(
-                        message = "✏️ deleted ${githubEvent.refType} ${githubEvent.ref} on ${githubEvent.repoUrl}",
+                        message = "✏️ deleted ${githubEvent.refType} `${githubEvent.ref}` on ${githubEvent.repoUrl}",
                         date = githubEvent.createdAt.parseDate()
                     )
                 }
@@ -36,7 +36,7 @@ class AdaptGithubEventsToActivityItemsImpl : AdaptGithubEventsToActivityItems {
                 is GithubEvent.PullRequestEvent -> {
                     val action = if(githubEvent.merged) "merged" else githubEvent.action
                     ActivityItem(
-                        message = "🧑🏻‍💻$action PR [${githubEvent.number}](${githubEvent.prUrl}) to ${githubEvent.repoUrl}: \"${githubEvent.title}\"",
+                        message = "🧑🏻‍💻 $action PR [#${githubEvent.number}](${githubEvent.prUrl}) to ${githubEvent.repoUrl}: \"${githubEvent.title}\"",
                         date = githubEvent.createdAt.parseDate()
                     )
                 }
@@ -45,6 +45,10 @@ class AdaptGithubEventsToActivityItemsImpl : AdaptGithubEventsToActivityItems {
         }.take(FIRST_TEN)
     }
 
+    /**
+     * Parses just the date from the datetime format.
+     * Example: 2024-01-28T20:27:53Z --> 2024-01-28
+     */
     private fun String.parseDate(): String {
         return this.substring(0, 10)
     }
