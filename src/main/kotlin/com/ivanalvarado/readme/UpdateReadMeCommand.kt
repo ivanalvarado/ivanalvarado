@@ -34,6 +34,7 @@ class UpdateReadMeCommand : CliktCommand() {
             GenerateReadMeTemplateImpl()(activityItems)
         }
 
+        echo(newReadMe)
         FileSystem.SYSTEM.write(outputFile.toOkioPath()) { writeUtf8(newReadMe) }
         exitProcess(0)
     }
