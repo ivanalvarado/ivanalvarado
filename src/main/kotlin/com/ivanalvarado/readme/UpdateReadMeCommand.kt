@@ -15,8 +15,7 @@ class UpdateReadMeCommand : CliktCommand() {
     private val login: String by option(help = "The login to fetch user events for.").required()
 
     override fun run() {
-        val retrofit = RetrofitHelper.getInstance(apiToken)
-        val service = retrofit.create(GithubService::class.java)
+        val service = RetrofitHelper.getInstance(apiToken)
         runBlocking {
             val response = service.userEvents(login)
             if (response.isSuccessful) {

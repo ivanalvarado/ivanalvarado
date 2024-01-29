@@ -24,6 +24,7 @@ dependencies {
     implementation(libs.retrofit.converter.moshi)
     testImplementation(libs.junit)
     testImplementation(libs.kotlin.test)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
 
 tasks.test {

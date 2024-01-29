@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit
 
 object RetrofitHelper {
 
-    fun getInstance(authToken: String, isDebug: Boolean = false): Retrofit {
+    fun getInstance(authToken: String, isDebug: Boolean = false): GithubService {
         val authInterceptor = AuthInterceptor(authToken)
 
         val loggingInterceptor = HttpLoggingInterceptor().setLevel(
@@ -30,10 +30,12 @@ object RetrofitHelper {
             Moshi.Builder().addLast(KotlinJsonAdapterFactory()).build()
         )
 
-        return Retrofit.Builder()
+        val retrofit = Retrofit.Builder()
             .baseUrl("https://api.github.com/")
             .client(client)
             .addConverterFactory(moshiConverterFactory)
             .build()
+
+        return retrofit.create(GithubService::class.java)
     }
 }
