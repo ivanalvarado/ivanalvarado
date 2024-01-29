@@ -46,7 +46,7 @@ class GenerateReadMeTemplateImplTest {
     )
 
     private val expectedReadMeTemplate = """
-        Android Build @ Tinder
+        ### Android Build @ Tinder
         
         ## Github Activity
         - **2024-01-28** - ⚡️ created branch `main` on https://github.com/ivanalvarado/ivanalvarado
