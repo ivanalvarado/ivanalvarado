@@ -23,4 +23,4 @@ jobs:
         run: chmod +x gradlew
 
       - name: Run Update README Command
-        run: ./gradlew run --args="--api-token $GH_API_TOKEN --login ivanalvarado --output-file README.md"
+        run: ./update_readme.sh
