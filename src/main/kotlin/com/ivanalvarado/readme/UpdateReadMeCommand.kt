@@ -8,7 +8,7 @@ import com.ivanalvarado.readme.network.RetrofitHelper
 import kotlinx.coroutines.runBlocking
 import kotlin.system.exitProcess
 
-class ReadMeUpdaterCommand : CliktCommand() {
+class UpdateReadMeCommand : CliktCommand() {
 
     private val apiToken: String by option(help = "All requests require a Github API token.").required()
 
@@ -30,5 +30,5 @@ class ReadMeUpdaterCommand : CliktCommand() {
 }
 
 fun main(args: Array<String>) {
-    ReadMeUpdaterCommand().main(args)
+    UpdateReadMeCommand().main(args)
 }

@@ -11,7 +11,7 @@ repositories {
 }
 
 application {
-    mainClass.set("com.ivanalvarado.readme.ReadMeUpdaterCommandKt")
+    mainClass.set("com.ivanalvarado.readme.UpdateReadMeCommandKt")
 }
 
 dependencies {
