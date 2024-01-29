@@ -20,6 +20,7 @@ dependencies {
     implementation(libs.moshi)
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging.interceptor)
+    implementation(libs.okio)
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.moshi)
     testImplementation(libs.junit)
