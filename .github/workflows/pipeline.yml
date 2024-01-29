@@ -27,3 +27,5 @@ jobs:
 
       - name: Run Update README Command
         run: ./update_readme.sh
+        env:
+          GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
