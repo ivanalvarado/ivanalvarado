@@ -1,6 +1,7 @@
 package com.ivanalvarado.readme.domain.model
 
 sealed class GithubEvent {
+    abstract val repoName: String
     abstract val repoUrl: String
     abstract val createdAt: String
 
@@ -9,6 +10,7 @@ sealed class GithubEvent {
         val issueNumber: Int,
         val title: String,
         val issueUrl: String,
+        override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
     ): GithubEvent()
@@ -16,6 +18,7 @@ sealed class GithubEvent {
     data class IssueCommentEvent(
         val issueNumber: Int,
         val issueCommentUrl: String,
+        override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
     ): GithubEvent()
@@ -26,6 +29,7 @@ sealed class GithubEvent {
         val merged: Boolean,
         val number: Int,
         val prUrl: String,
+        override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
     ): GithubEvent()
@@ -33,6 +37,7 @@ sealed class GithubEvent {
     data class CreateEvent(
         val refType: String,
         val ref: String,
+        override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
     ): GithubEvent()
@@ -40,11 +45,13 @@ sealed class GithubEvent {
     data class DeleteEvent(
         val refType: String,
         val ref: String,
+        override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
     ): GithubEvent()
 
      data object UnsupportedEvent : GithubEvent() {
+         override val repoName: String = ""
          override val repoUrl: String = ""
          override val createdAt: String = ""
      }

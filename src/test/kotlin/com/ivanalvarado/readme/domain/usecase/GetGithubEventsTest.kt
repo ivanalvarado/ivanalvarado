@@ -43,18 +43,21 @@ class GetGithubEventsTest {
         GithubEvent.CreateEvent(
             refType = "branch",
             ref = "main",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
         GithubEvent.DeleteEvent(
             refType = "branch",
             ref = "experimental-branch",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
         GithubEvent.IssueCommentEvent(
             issueNumber = 42,
             issueCommentUrl = "url/to/comment",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
@@ -63,6 +66,7 @@ class GetGithubEventsTest {
             issueNumber = 42,
             title = "Something is broken",
             issueUrl = "url/to/issue",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
@@ -72,6 +76,7 @@ class GetGithubEventsTest {
             merged = true,
             number = 8,
             prUrl = "url/to/pull/request",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
@@ -81,6 +86,7 @@ class GetGithubEventsTest {
             merged = false,
             number = 8,
             prUrl = "url/to/pull/request",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),

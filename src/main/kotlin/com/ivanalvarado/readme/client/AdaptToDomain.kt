@@ -11,7 +11,8 @@ class AdaptToDomain {
                     GithubEvent.CreateEvent(
                         refType = event.payload?.ref_type.orEmpty(),
                         ref = event.payload?.ref.orEmpty(),
-                        repoUrl = event.repo?.url.orEmpty(),
+                        repoName = event.repo?.name.orEmpty(),
+                        repoUrl = event.repo?.getHtmlUrl().orEmpty(),
                         createdAt = event.created_at.orEmpty()
                     )
                 }
@@ -19,7 +20,8 @@ class AdaptToDomain {
                     GithubEvent.DeleteEvent(
                         refType = event.payload?.ref_type.orEmpty(),
                         ref = event.payload?.ref.orEmpty(),
-                        repoUrl = event.repo?.url.orEmpty(),
+                        repoName = event.repo?.name.orEmpty(),
+                        repoUrl = event.repo?.getHtmlUrl().orEmpty(),
                         createdAt = event.created_at.orEmpty()
                     )
                 }
@@ -29,7 +31,8 @@ class AdaptToDomain {
                         issueNumber = event.payload?.issue?.number ?: 0,
                         title = event.payload?.issue?.title.orEmpty(),
                         issueUrl = event.payload?.issue?.html_url.orEmpty(),
-                        repoUrl = event.repo?.url.orEmpty(),
+                        repoName = event.repo?.name.orEmpty(),
+                        repoUrl = event.repo?.getHtmlUrl().orEmpty(),
                         createdAt = event.created_at.orEmpty()
                     )
                 }
@@ -37,7 +40,8 @@ class AdaptToDomain {
                     GithubEvent.IssueCommentEvent(
                         issueNumber = event.payload?.issue?.number ?: 0,
                         issueCommentUrl = event.payload?.issue?.comments_url.orEmpty(),
-                        repoUrl = event.repo?.url.orEmpty(),
+                        repoName = event.repo?.name.orEmpty(),
+                        repoUrl = event.repo?.getHtmlUrl().orEmpty(),
                         createdAt = event.created_at.orEmpty()
                     )
                 }
@@ -48,7 +52,8 @@ class AdaptToDomain {
                         merged = event.payload?.pull_request?.merged ?: false,
                         number = event.payload?.number ?: 0,
                         prUrl = event.payload?.pull_request?.html_url.orEmpty(),
-                        repoUrl = event.repo?.url.orEmpty(),
+                        repoName = event.repo?.name.orEmpty(),
+                        repoUrl = event.repo?.getHtmlUrl().orEmpty(),
                         createdAt = event.created_at.orEmpty()
                     )
                 }

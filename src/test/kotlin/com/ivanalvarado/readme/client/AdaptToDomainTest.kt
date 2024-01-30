@@ -54,12 +54,14 @@ class AdaptToDomainTest(
                         GithubEvent.CreateEvent(
                             refType = "",
                             ref = "",
+                            repoName = "",
                             repoUrl = "",
                             createdAt = ""
                         ),
                         GithubEvent.DeleteEvent(
                             refType = "",
                             ref = "",
+                            repoName = "",
                             repoUrl = "",
                             createdAt = ""
                         ),
@@ -68,12 +70,14 @@ class AdaptToDomainTest(
                             issueNumber = 0,
                             title = "",
                             issueUrl = "",
+                            repoName = "",
                             repoUrl = "",
                             createdAt = ""
                         ),
                         GithubEvent.IssueCommentEvent(
                             issueNumber = 0,
                             issueCommentUrl = "",
+                            repoName = "",
                             repoUrl = "",
                             createdAt = ""
                         ),
@@ -83,6 +87,7 @@ class AdaptToDomainTest(
                             merged = false,
                             number = 0,
                             prUrl = "",
+                            repoName = "",
                             repoUrl = "",
                             createdAt = ""
                         ),
@@ -94,8 +99,8 @@ class AdaptToDomainTest(
                         EventsJson(
                             type = "CreateEvent",
                             repo = RepoJson(
-                                name = "ivanalvarado",
-                                url = "https://github.com/ivanalvarado/ivanalvarado"
+                                name = "ivanalvarado/ivanalvarado",
+                                url = "https://api.github.com/repos/ivanalvarado/ivanalvarado"
                             ),
                             payload = PayloadJson(
                                 ref_type = "branch",
@@ -110,7 +115,8 @@ class AdaptToDomainTest(
                                 ref = "experimental-branch"
                             ),
                             repo = RepoJson(
-                                url = "https://github.com/ivanalvarado/ivanalvarado"
+                                name = "ivanalvarado/ivanalvarado",
+                                url = "https://api.github.com/repos/ivanalvarado/ivanalvarado"
                             ),
                             created_at = "2024-01-28T20:27:53Z"
                         ),
@@ -125,7 +131,8 @@ class AdaptToDomainTest(
                                 )
                             ),
                             repo = RepoJson(
-                                url = "https://github.com/ivanalvarado/ivanalvarado"
+                                name = "ivanalvarado/ivanalvarado",
+                                url = "https://api.github.com/repos/ivanalvarado/ivanalvarado"
                             ),
                             created_at = "2024-01-28T20:27:53Z"
                         ),
@@ -138,7 +145,8 @@ class AdaptToDomainTest(
                                 )
                             ),
                             repo = RepoJson(
-                                url = "https://github.com/ivanalvarado/ivanalvarado"
+                                name = "ivanalvarado/ivanalvarado",
+                                url = "https://api.github.com/repos/ivanalvarado/ivanalvarado"
                             ),
                             created_at = "2024-01-28T20:27:53Z"
                         ),
@@ -154,7 +162,8 @@ class AdaptToDomainTest(
                                 number = 8
                             ),
                             repo = RepoJson(
-                                url = "https://github.com/ivanalvarado/ivanalvarado"
+                                name = "ivanalvarado/ivanalvarado",
+                                url = "https://api.github.com/repos/ivanalvarado/ivanalvarado"
                             ),
                             created_at = "2024-01-28T20:27:53Z"
                         ),
@@ -164,12 +173,14 @@ class AdaptToDomainTest(
                         GithubEvent.CreateEvent(
                             refType = "branch",
                             ref = "main",
+                            repoName = "ivanalvarado/ivanalvarado",
                             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
                             createdAt = "2024-01-28T20:27:53Z"
                         ),
                         GithubEvent.DeleteEvent(
                             refType = "branch",
                             ref = "experimental-branch",
+                            repoName = "ivanalvarado/ivanalvarado",
                             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
                             createdAt = "2024-01-28T20:27:53Z"
                         ),
@@ -178,12 +189,14 @@ class AdaptToDomainTest(
                             issueNumber = 42,
                             title = "Something is broken",
                             issueUrl = "url/to/issue",
+                            repoName = "ivanalvarado/ivanalvarado",
                             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
                             createdAt = "2024-01-28T20:27:53Z"
                         ),
                         GithubEvent.IssueCommentEvent(
                             issueNumber = 42,
                             issueCommentUrl = "url/to/comment",
+                            repoName = "ivanalvarado/ivanalvarado",
                             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
                             createdAt = "2024-01-28T20:27:53Z"
                         ),
@@ -193,6 +206,7 @@ class AdaptToDomainTest(
                             merged = false,
                             number = 8,
                             prUrl = "url/to/pull/request",
+                            repoName = "ivanalvarado/ivanalvarado",
                             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
                             createdAt = "2024-01-28T20:27:53Z"
                         ),
