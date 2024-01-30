@@ -33,3 +33,13 @@ jobs:
         run: ./update_readme.sh
         env:
           GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
+
+      - name: Commit and push if changed
+        if: github.event_name != 'pull_request'
+        run: |
+          git diff
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "README-bot"
+          git add -A
+          git commit -m "Updated content" || exit 0
+          git push
