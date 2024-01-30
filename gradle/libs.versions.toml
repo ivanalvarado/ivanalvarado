@@ -2,7 +2,7 @@
 app-version = "1.0-SNAPSHOT"
 clikt = "4.2.2"
 jdk = "17"
-junit = "4.13.1"
+junit = "4.13.2"
 kotlin = "1.9.21"
 kotlinx-coroutines = "1.6.4"
 moshi = "1.15.0"
