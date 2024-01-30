@@ -48,6 +48,7 @@ class AdaptToDomainTest(
                         EventsJson(type = "IssuesEvent"),
                         EventsJson(type = "IssueCommentEvent"),
                         EventsJson(type = "PullRequestEvent"),
+                        EventsJson(type = "WatchEvent"),
                         EventsJson(type = "PushEvent")
                     ),
                     githubEvents = listOf(
@@ -87,6 +88,12 @@ class AdaptToDomainTest(
                             merged = false,
                             number = 0,
                             prUrl = "",
+                            repoName = "",
+                            repoUrl = "",
+                            createdAt = ""
+                        ),
+                        GithubEvent.WatchEvent(
+                            action = "",
                             repoName = "",
                             repoUrl = "",
                             createdAt = ""
@@ -167,6 +174,17 @@ class AdaptToDomainTest(
                             ),
                             created_at = "2024-01-28T20:27:53Z"
                         ),
+                        EventsJson(
+                            type = "WatchEvent",
+                            payload = PayloadJson(
+                                action = "started"
+                            ),
+                            repo = RepoJson(
+                                name = "ivanalvarado/ivanalvarado",
+                                url = "https://api.github.com/repos/ivanalvarado/ivanalvarado"
+                            ),
+                            created_at = "2024-01-28T20:27:53Z"
+                        ),
                         EventsJson(type = "PushEvent")
                     ),
                     githubEvents = listOf(
@@ -206,6 +224,12 @@ class AdaptToDomainTest(
                             merged = false,
                             number = 8,
                             prUrl = "url/to/pull/request",
+                            repoName = "ivanalvarado/ivanalvarado",
+                            repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
+                            createdAt = "2024-01-28T20:27:53Z"
+                        ),
+                        GithubEvent.WatchEvent(
+                            action = "started",
                             repoName = "ivanalvarado/ivanalvarado",
                             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
                             createdAt = "2024-01-28T20:27:53Z"
