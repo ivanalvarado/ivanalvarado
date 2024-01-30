@@ -77,6 +77,12 @@ class AdaptGithubEventsToActivityItemsTest {
             createdAt = "2024-01-28T20:27:53Z"
         ),
         GithubEvent.UnsupportedEvent,
+        GithubEvent.WatchEvent(
+            action = "started",
+            repoName = "ivanalvarado/ivanalvarado",
+            repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
+            createdAt = "2024-01-28T20:27:53Z"
+        ),
         GithubEvent.UnsupportedEvent,
     )
 
@@ -103,6 +109,10 @@ class AdaptGithubEventsToActivityItemsTest {
         ),
         ActivityItem(
             message = "🧑🏻‍💻 opened PR [#8](url/to/pull/request) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): \"Add support for configuration cache\"",
+            date = "2024-01-28"
+        ),
+        ActivityItem(
+            message = "👀 started watching [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado)",
             date = "2024-01-28"
         )
     )

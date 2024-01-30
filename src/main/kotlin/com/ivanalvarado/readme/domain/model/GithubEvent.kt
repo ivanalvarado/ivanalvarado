@@ -13,7 +13,7 @@ sealed class GithubEvent {
         override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
-    ): GithubEvent()
+    ) : GithubEvent()
 
     data class IssueCommentEvent(
         val issueNumber: Int,
@@ -21,7 +21,7 @@ sealed class GithubEvent {
         override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
-    ): GithubEvent()
+    ) : GithubEvent()
 
     data class PullRequestEvent(
         val action: String,
@@ -32,7 +32,7 @@ sealed class GithubEvent {
         override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
-    ): GithubEvent()
+    ) : GithubEvent()
 
     data class CreateEvent(
         val refType: String,
@@ -40,7 +40,7 @@ sealed class GithubEvent {
         override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
-    ): GithubEvent()
+    ) : GithubEvent()
 
     data class DeleteEvent(
         val refType: String,
@@ -48,11 +48,18 @@ sealed class GithubEvent {
         override val repoName: String,
         override val repoUrl: String,
         override val createdAt: String
-    ): GithubEvent()
+    ) : GithubEvent()
 
-     data object UnsupportedEvent : GithubEvent() {
-         override val repoName: String = ""
-         override val repoUrl: String = ""
-         override val createdAt: String = ""
-     }
+    data class WatchEvent(
+        val action: String,
+        override val repoName: String,
+        override val repoUrl: String,
+        override val createdAt: String
+    ) : GithubEvent()
+
+    data object UnsupportedEvent : GithubEvent() {
+        override val repoName: String = ""
+        override val repoUrl: String = ""
+        override val createdAt: String = ""
+    }
 }

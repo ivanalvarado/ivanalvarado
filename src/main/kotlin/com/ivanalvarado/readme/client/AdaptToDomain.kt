@@ -57,6 +57,14 @@ class AdaptToDomain {
                         createdAt = event.created_at.orEmpty()
                     )
                 }
+                "WatchEvent" -> {
+                    GithubEvent.WatchEvent(
+                        action = event.payload?.action.orEmpty(),
+                        repoName = event.repo?.name.orEmpty(),
+                        repoUrl = event.repo?.getHtmlUrl().orEmpty(),
+                        createdAt = event.created_at.orEmpty()
+                    )
+                }
                 else -> {
                     GithubEvent.UnsupportedEvent
                 }

@@ -40,6 +40,12 @@ class AdaptGithubEventsToActivityItemsImpl : AdaptGithubEventsToActivityItems {
                         date = githubEvent.createdAt.parseDate()
                     )
                 }
+                is GithubEvent.WatchEvent -> {
+                    ActivityItem(
+                        message = "👀 ${githubEvent.action} watching [${githubEvent.repoName}](${githubEvent.repoUrl})",
+                        date = githubEvent.createdAt.parseDate()
+                    )
+                }
                 else -> throw IllegalStateException("Unsupported Event: $githubEvent")
             }
         }.take(FIRST_TEN)
