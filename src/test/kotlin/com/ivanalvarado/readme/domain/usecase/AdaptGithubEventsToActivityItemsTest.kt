@@ -24,6 +24,7 @@ class AdaptGithubEventsToActivityItemsTest {
         GithubEvent.CreateEvent(
             refType = "branch",
             ref = "main",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
@@ -31,6 +32,7 @@ class AdaptGithubEventsToActivityItemsTest {
         GithubEvent.DeleteEvent(
             refType = "branch",
             ref = "experimental-branch",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
@@ -38,6 +40,7 @@ class AdaptGithubEventsToActivityItemsTest {
         GithubEvent.IssueCommentEvent(
             issueNumber = 42,
             issueCommentUrl = "url/to/comment",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
@@ -47,6 +50,7 @@ class AdaptGithubEventsToActivityItemsTest {
             issueNumber = 42,
             title = "Something is broken",
             issueUrl = "url/to/issue",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
@@ -57,6 +61,7 @@ class AdaptGithubEventsToActivityItemsTest {
             merged = true,
             number = 8,
             prUrl = "url/to/pull/request",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
@@ -67,6 +72,7 @@ class AdaptGithubEventsToActivityItemsTest {
             merged = false,
             number = 8,
             prUrl = "url/to/pull/request",
+            repoName = "ivanalvarado/ivanalvarado",
             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
             createdAt = "2024-01-28T20:27:53Z"
         ),
@@ -76,27 +82,27 @@ class AdaptGithubEventsToActivityItemsTest {
 
     private val expectedActivityItems = listOf(
         ActivityItem(
-            message = "⚡️ created branch `main` on https://github.com/ivanalvarado/ivanalvarado",
+            message = "⚡️ created branch `main` on [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado)",
             date = "2024-01-28"
         ),
         ActivityItem(
-            message = "✏️ deleted branch `experimental-branch` on https://github.com/ivanalvarado/ivanalvarado",
+            message = "✏️ deleted branch `experimental-branch` on [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado)",
             date = "2024-01-28"
         ),
         ActivityItem(
-            message = "💬 commented on [#42](url/to/comment) in https://github.com/ivanalvarado/ivanalvarado",
+            message = "💬 commented on [#42](url/to/comment) in [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado)",
             date = "2024-01-28"
         ),
         ActivityItem(
-            message = "📝 opened issue [#42](url/to/issue) on https://github.com/ivanalvarado/ivanalvarado: \"Something is broken\"",
+            message = "📝 opened issue [#42](url/to/issue) on [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): \"Something is broken\"",
             date = "2024-01-28"
         ),
         ActivityItem(
-            message = "🧑🏻‍💻 merged PR [#8](url/to/pull/request) to https://github.com/ivanalvarado/ivanalvarado: \"Add support for configuration cache\"",
+            message = "🧑🏻‍💻 merged PR [#8](url/to/pull/request) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): \"Add support for configuration cache\"",
             date = "2024-01-28"
         ),
         ActivityItem(
-            message = "🧑🏻‍💻 opened PR [#8](url/to/pull/request) to https://github.com/ivanalvarado/ivanalvarado: \"Add support for configuration cache\"",
+            message = "🧑🏻‍💻 opened PR [#8](url/to/pull/request) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): \"Add support for configuration cache\"",
             date = "2024-01-28"
         )
     )

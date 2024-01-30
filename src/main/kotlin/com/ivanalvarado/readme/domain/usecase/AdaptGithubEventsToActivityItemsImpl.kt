@@ -11,32 +11,32 @@ class AdaptGithubEventsToActivityItemsImpl : AdaptGithubEventsToActivityItems {
             when(githubEvent) {
                 is GithubEvent.CreateEvent -> {
                     ActivityItem(
-                        message = "⚡️ created ${githubEvent.refType} `${githubEvent.ref}` on ${githubEvent.repoUrl}",
+                        message = "⚡️ created ${githubEvent.refType} `${githubEvent.ref}` on [${githubEvent.repoName}](${githubEvent.repoUrl})",
                         date = githubEvent.createdAt.parseDate()
                     )
                 }
                 is GithubEvent.DeleteEvent -> {
                     ActivityItem(
-                        message = "✏️ deleted ${githubEvent.refType} `${githubEvent.ref}` on ${githubEvent.repoUrl}",
+                        message = "✏️ deleted ${githubEvent.refType} `${githubEvent.ref}` on [${githubEvent.repoName}](${githubEvent.repoUrl})",
                         date = githubEvent.createdAt.parseDate()
                     )
                 }
                 is GithubEvent.IssueCommentEvent -> {
                     ActivityItem(
-                        message = "💬 commented on [#${githubEvent.issueNumber}](${githubEvent.issueCommentUrl}) in ${githubEvent.repoUrl}",
+                        message = "💬 commented on [#${githubEvent.issueNumber}](${githubEvent.issueCommentUrl}) in [${githubEvent.repoName}](${githubEvent.repoUrl})",
                         date = githubEvent.createdAt.parseDate()
                     )
                 }
                 is GithubEvent.IssuesEvent -> {
                     ActivityItem(
-                        message = "📝 ${githubEvent.action} issue [#${githubEvent.issueNumber}](${githubEvent.issueUrl}) on ${githubEvent.repoUrl}: \"${githubEvent.title}\"",
+                        message = "📝 ${githubEvent.action} issue [#${githubEvent.issueNumber}](${githubEvent.issueUrl}) on [${githubEvent.repoName}](${githubEvent.repoUrl}): \"${githubEvent.title}\"",
                         date = githubEvent.createdAt.parseDate()
                     )
                 }
                 is GithubEvent.PullRequestEvent -> {
                     val action = if(githubEvent.merged) "merged" else githubEvent.action
                     ActivityItem(
-                        message = "🧑🏻‍💻 $action PR [#${githubEvent.number}](${githubEvent.prUrl}) to ${githubEvent.repoUrl}: \"${githubEvent.title}\"",
+                        message = "🧑🏻‍💻 $action PR [#${githubEvent.number}](${githubEvent.prUrl}) to [${githubEvent.repoName}](${githubEvent.repoUrl}): \"${githubEvent.title}\"",
                         date = githubEvent.createdAt.parseDate()
                     )
                 }

@@ -24,7 +24,11 @@ data class RepoJson(
     val id: Int? = null,
     val name: String? = null,
     val url: String?
-)
+) {
+    fun getHtmlUrl(): String {
+        return url?.replace("api.github.com/repos", "github.com").orEmpty()
+    }
+}
 
 data class PayloadJson(
     val action: String? = null,
