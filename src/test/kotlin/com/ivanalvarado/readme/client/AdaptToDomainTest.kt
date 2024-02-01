@@ -185,6 +185,20 @@ class AdaptToDomainTest(
                             ),
                             created_at = "2024-01-28T20:27:53Z"
                         ),
+                        EventsJson(
+                            type = "ForkEvent",
+                            payload = PayloadJson(
+                                forkee = ForkeeJson(
+                                    full_name = "ivanalvarado/nowinandroid",
+                                    html_url = "https://github.com/ivanalvarado/nowinandroid",
+                                )
+                            ),
+                            repo = RepoJson(
+                                name = "android/nowinandroid",
+                                url = "https://api.github.com/repos/android/nowinandroid"
+                            ),
+                            created_at = "2024-01-28T20:27:53Z"
+                        ),
                         EventsJson(type = "PushEvent")
                     ),
                     githubEvents = listOf(
@@ -232,6 +246,13 @@ class AdaptToDomainTest(
                             action = "started",
                             repoName = "ivanalvarado/ivanalvarado",
                             repoUrl = "https://github.com/ivanalvarado/ivanalvarado",
+                            createdAt = "2024-01-28T20:27:53Z"
+                        ),
+                        GithubEvent.ForkEvent(
+                            fullName = "ivanalvarado/nowinandroid",
+                            htmlUrl = "https://github.com/ivanalvarado/nowinandroid",
+                            repoName = "android/nowinandroid",
+                            repoUrl = "https://github.com/android/nowinandroid",
                             createdAt = "2024-01-28T20:27:53Z"
                         ),
                         GithubEvent.UnsupportedEvent

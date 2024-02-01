@@ -84,6 +84,14 @@ class AdaptGithubEventsToActivityItemsTest {
             createdAt = "2024-01-28T20:27:53Z"
         ),
         GithubEvent.UnsupportedEvent,
+        GithubEvent.ForkEvent(
+            fullName = "ivanalvarado/nowinandroid",
+            htmlUrl = "https://github.com/ivanalvarado/nowinandroid",
+            repoName = "android/nowinandroid",
+            repoUrl = "https://github.com/android/nowinandroid",
+            createdAt = "2024-01-28T20:27:53Z"
+        ),
+        GithubEvent.UnsupportedEvent,
     )
 
     private val expectedActivityItems = listOf(
@@ -113,6 +121,10 @@ class AdaptGithubEventsToActivityItemsTest {
         ),
         ActivityItem(
             message = "👀 started watching [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado)",
+            date = "2024-01-28"
+        ),
+        ActivityItem(
+            message = "🔱 forked [ivanalvarado/nowinandroid](https://github.com/ivanalvarado/nowinandroid) from [android/nowinandroid](https://github.com/android/nowinandroid)",
             date = "2024-01-28"
         )
     )

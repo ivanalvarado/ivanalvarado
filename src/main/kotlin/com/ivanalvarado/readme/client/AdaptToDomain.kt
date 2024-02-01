@@ -65,6 +65,15 @@ class AdaptToDomain {
                         createdAt = event.created_at.orEmpty()
                     )
                 }
+                "ForkEvent" -> {
+                    GithubEvent.ForkEvent(
+                        fullName = event.payload?.forkee?.full_name.orEmpty(),
+                        htmlUrl = event.payload?.forkee?.html_url.orEmpty(),
+                        repoName = event.repo?.name.orEmpty(),
+                        repoUrl = event.repo?.getHtmlUrl().orEmpty(),
+                        createdAt = event.created_at.orEmpty()
+                    )
+                }
                 else -> {
                     GithubEvent.UnsupportedEvent
                 }

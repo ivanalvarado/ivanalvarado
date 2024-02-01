@@ -45,7 +45,8 @@ data class PayloadJson(
     val commits: List<CommitJson>? = null,
     val issue: IssueJson? = null,
     val pull_request: PullRequestJson? = null,
-    val number: Int? = null
+    val number: Int? = null,
+    val forkee: ForkeeJson? = null
 )
 
 data class CommitJson(
@@ -122,4 +123,9 @@ data class PullRequestJson(
     val html_url: String? = null,
     val title: String? = null,
     val merged: Boolean? = null
+)
+
+data class ForkeeJson(
+    val full_name: String? = null,
+    val html_url: String? = null
 )
