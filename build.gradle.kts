@@ -17,6 +17,7 @@ application {
 dependencies {
     implementation(libs.clikt)
     implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.datetime)
     implementation(libs.moshi)
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging.interceptor)
