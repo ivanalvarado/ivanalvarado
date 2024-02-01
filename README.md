@@ -1,6 +1,7 @@
 ### Android DevXp @ [Tinder](https://medium.com/tinder)
 
 ## Github Activity
+- **2024-02-01** - 🧑🏻‍💻 merged PR [#8](https://github.com/ivanalvarado/ivanalvarado/pull/8) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Add support for fork events"
 - **2024-02-01** - 🧑🏻‍💻 opened PR [#8](https://github.com/ivanalvarado/ivanalvarado/pull/8) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Add support for fork events"
 - **2024-02-01** - ⚡️ created branch `task/add-support-for-fork-event` on [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado)
 - **2024-01-31** - 👀 started watching [BreadMoirai/github-release-gradle-plugin](https://github.com/BreadMoirai/github-release-gradle-plugin)
@@ -10,4 +11,3 @@
 - **2024-01-30** - 🧑🏻‍💻 merged PR [#6](https://github.com/ivanalvarado/ivanalvarado/pull/6) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump junit:junit from 4.13.1 to 4.13.2"
 - **2024-01-30** - 🧑🏻‍💻 merged PR [#3](https://github.com/ivanalvarado/ivanalvarado/pull/3) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Add commit and push if changed step to actions"
 - **2024-01-30** - 🧑🏻‍💻 opened PR [#3](https://github.com/ivanalvarado/ivanalvarado/pull/3) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Add commit and push if changed step to actions"
-- **2024-01-30** - ⚡️ created branch `task/add-commit-and-push-step-to-actions` on [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado)
