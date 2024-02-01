@@ -46,6 +46,12 @@ class AdaptGithubEventsToActivityItemsImpl : AdaptGithubEventsToActivityItems {
                         date = githubEvent.createdAt.parseDate()
                     )
                 }
+                is GithubEvent.ForkEvent -> {
+                    ActivityItem(
+                        message = "🔱 forked [${githubEvent.fullName}](${githubEvent.htmlUrl}) from [${githubEvent.repoName}](${githubEvent.repoUrl})",
+                        date = githubEvent.createdAt.parseDate()
+                    )
+                }
                 else -> throw IllegalStateException("Unsupported Event: $githubEvent")
             }
         }.take(FIRST_TEN)

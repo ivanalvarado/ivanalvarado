@@ -57,6 +57,14 @@ sealed class GithubEvent {
         override val createdAt: String
     ) : GithubEvent()
 
+    data class ForkEvent(
+        val fullName: String,
+        val htmlUrl: String,
+        override val repoName: String,
+        override val repoUrl: String,
+        override val createdAt: String
+    ) : GithubEvent()
+
     data object UnsupportedEvent : GithubEvent() {
         override val repoName: String = ""
         override val repoUrl: String = ""
