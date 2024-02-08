@@ -1,4 +1,4 @@
-### Android DevXp @ [Tinder](https://medium.com/tinder)
+### Mobile DevXp @ [Tinder](https://medium.com/tinder)
 
 ## Github Activity
 - **2024-02-06** - 🧑🏻‍💻 merged PR [#10](https://github.com/ivanalvarado/ivanalvarado/pull/10) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump com.squareup.moshi:moshi-kotlin from 1.15.0 to 1.15.1"
