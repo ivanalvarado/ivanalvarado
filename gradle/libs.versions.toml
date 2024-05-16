@@ -1,6 +1,6 @@
 [versions]
 app-version = "1.0-SNAPSHOT"
-clikt = "4.2.2"
+clikt = "4.4.0"
 jdk = "17"
 junit = "4.13.2"
 kotlin = "1.9.24"

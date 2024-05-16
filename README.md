@@ -1,6 +1,9 @@
 ### Mobile DevXp @ [Tinder](https://medium.com/tinder)
 
 ## Github Activity
+- **2024-05-15** - 👀 started watching [cdsap/Telltale](https://github.com/cdsap/Telltale)
+- **2024-05-14** - 👀 started watching [michel-kraemer/gradle-download-task](https://github.com/michel-kraemer/gradle-download-task)
+- **2024-05-13** - 🧑🏻‍💻 merged PR [#18](https://github.com/ivanalvarado/ivanalvarado/pull/18) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump com.github.ajalt.clikt:clikt from 4.2.2 to 4.4.0"
 - **2024-05-13** - 🧑🏻‍💻 merged PR [#19](https://github.com/ivanalvarado/ivanalvarado/pull/19) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump kotlinx-coroutines from 1.8.0 to 1.8.1"
 - **2024-05-13** - 🧑🏻‍💻 merged PR [#17](https://github.com/ivanalvarado/ivanalvarado/pull/17) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump retrofit from 2.10.0 to 2.11.0"
 - **2024-03-29** - 🧑🏻‍💻 merged PR [#15](https://github.com/ivanalvarado/ivanalvarado/pull/15) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump retrofit from 2.9.0 to 2.10.0"
@@ -8,6 +11,3 @@
 - **2024-03-13** - 🧑🏻‍💻 merged PR [#13](https://github.com/ivanalvarado/ivanalvarado/pull/13) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump org.jetbrains.kotlin:kotlin-test from 1.9.22 to 1.9.23"
 - **2024-03-05** - 🧑🏻‍💻 opened PR [#1](https://github.com/ivanalvarado/dependency-analysis-android-gradle-plugin/pull/1) to [ivanalvarado/dependency-analysis-android-gradle-plugin](https://github.com/ivanalvarado/dependency-analysis-android-gradle-plugin): "Task/add support for project typesafe accessors"
 - **2024-02-22** - 🧑🏻‍💻 merged PR [#12](https://github.com/ivanalvarado/ivanalvarado/pull/12) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump kotlinx-coroutines from 1.7.3 to 1.8.0"
-- **2024-02-22** - 🧑🏻‍💻 merged PR [#11](https://github.com/ivanalvarado/ivanalvarado/pull/11) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump com.squareup.okio:okio from 3.7.0 to 3.8.0"
-- **2024-02-22** - ⚡️ created branch `task/add-affected-subgraph-support` on [ivanalvarado/graph-untangler-plugin](https://github.com/ivanalvarado/graph-untangler-plugin)
-- **2024-02-15** - 🔱 forked [ivanalvarado/graph-untangler-plugin](https://github.com/ivanalvarado/graph-untangler-plugin) from [siggijons/graph-untangler-plugin](https://github.com/siggijons/graph-untangler-plugin)
