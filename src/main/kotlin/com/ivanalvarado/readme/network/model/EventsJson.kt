@@ -69,7 +69,7 @@ data class IssueJson(
     val comments_url: String? = null,
     val events_url: String? = null,
     val html_url: String? = null,
-    val id: Int? = null,
+    val id: Long? = null,
     val node_id: String? = null,
     val number: Int? = null,
     val title: String? = null,
