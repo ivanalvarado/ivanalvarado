@@ -1,6 +1,7 @@
 ### Mobile DevXp @ [Tinder](https://medium.com/tinder)
 
 ## Github Activity
+- **2025-01-11** - 👀 started watching [EmergeTools/emerge-cli](https://github.com/EmergeTools/emerge-cli)
 - **2025-01-10** - 🧑🏻‍💻 opened PR [#12](https://github.com/ivanalvarado/android-bootstrap/pull/12) to [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "11 - Migrate to Hilt"
 - **2025-01-10** - ⚡️ created branch `ia/issue-11` on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap)
 - **2025-01-08** - 👀 started watching [gradle/android-cache-fix-gradle-plugin](https://github.com/gradle/android-cache-fix-gradle-plugin)
@@ -10,4 +11,3 @@
 - **2024-11-04** - ⚡️ created branch `add-develocity-plugin-support` on [ivanalvarado/IpInfo](https://github.com/ivanalvarado/IpInfo)
 - **2024-11-02** - 💬 commented on [#1](https://api.github.com/repos/ivanalvarado/android-bootstrap/issues/1/comments) in [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap)
 - **2024-11-02** - 📝 closed issue [#1](https://github.com/ivanalvarado/android-bootstrap/issues/1) on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener""
-- **2024-11-02** - 📝 opened issue [#11](https://github.com/ivanalvarado/android-bootstrap/issues/11) on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Migrate to Hilt"
