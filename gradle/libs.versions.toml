@@ -1,10 +1,10 @@
 [versions]
 app-version = "1.0-SNAPSHOT"
-clikt = "4.4.0"
+clikt = "5.0.2"
 jdk = "17"
 junit = "4.13.2"
-kotlin = "1.9.24"
-kotlinx-coroutines = "1.8.1"
+kotlin = "2.0.10"
+kotlinx-coroutines = "1.10.1"
 kotlinx-datetime = "0.6.1"
 moshi = "1.15.2"
 okhttp = "4.12.0"
