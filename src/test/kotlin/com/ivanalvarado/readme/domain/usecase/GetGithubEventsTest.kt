@@ -5,6 +5,7 @@ import com.ivanalvarado.readme.domain.model.EventsResult
 import com.ivanalvarado.readme.domain.model.GithubEvent
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
+import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import kotlin.test.assertEquals
 
@@ -12,7 +13,7 @@ import kotlin.test.assertEquals
 class GetGithubEventsTest {
 
     @Test
-    fun `invoke - given successful fetch of events, should return list of events`() = runBlockingTest {
+    fun `invoke - given successful fetch of events, should return list of events`() = runTest {
         // Given
         val config = FakeGithubClient.Config.Success(githubEvents)
         val client = FakeGithubClient(config)
@@ -26,7 +27,7 @@ class GetGithubEventsTest {
     }
 
     @Test
-    fun `invoke - given error fetching github events, should return empty list`() = runBlockingTest {
+    fun `invoke - given error fetching github events, should return empty list`() = runTest {
         // Given
         val config = FakeGithubClient.Config.Error
         val client = FakeGithubClient(config)
