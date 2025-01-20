@@ -1,13 +1,13 @@
 ### Mobile DevXp @ [Tinder](https://medium.com/tinder)
 
 ## Github Activity
-- **2024-11-12** - 🔱 forked [ivanalvarado/AffectedModuleDetector](https://github.com/ivanalvarado/AffectedModuleDetector) from [dropbox/AffectedModuleDetector](https://github.com/dropbox/AffectedModuleDetector)
-- **2024-11-04** - 🧑🏻‍💻 opened PR [#1](https://github.com/cdsap/IpInfo/pull/1) to [cdsap/IpInfo](https://github.com/cdsap/IpInfo): "Add Develocity Gradle Plugin support"
-- **2024-11-04** - ⚡️ created branch `add-develocity-plugin-support` on [ivanalvarado/IpInfo](https://github.com/ivanalvarado/IpInfo)
-- **2024-11-02** - 💬 commented on [#1](https://api.github.com/repos/ivanalvarado/android-bootstrap/issues/1/comments) in [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap)
-- **2024-11-02** - 📝 closed issue [#1](https://github.com/ivanalvarado/android-bootstrap/issues/1) on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener""
-- **2024-11-02** - 📝 opened issue [#11](https://github.com/ivanalvarado/android-bootstrap/issues/11) on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Migrate to Hilt"
-- **2024-11-02** - 🔱 forked [ivanalvarado/IpInfo](https://github.com/ivanalvarado/IpInfo) from [cdsap/IpInfo](https://github.com/cdsap/IpInfo)
-- **2024-11-02** - 🧑🏻‍💻 merged PR [#10](https://github.com/ivanalvarado/android-bootstrap/pull/10) to [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Add Kotlin Coroutines"
-- **2024-11-02** - 🧑🏻‍💻 opened PR [#10](https://github.com/ivanalvarado/android-bootstrap/pull/10) to [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Add Kotlin Coroutines"
-- **2024-11-02** - ⚡️ created branch `add-kotlin-coroutines` on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap)
+- **2025-01-19** - 🧑🏻‍💻 merged PR [#23](https://github.com/ivanalvarado/ivanalvarado/pull/23) to [ivanalvarado/ivanalvarado](https://github.com/ivanalvarado/ivanalvarado): "Bump org.jetbrains.kotlin:kotlin-test from 1.9.24 to 2.0.10"
+- **2025-01-19** - 🧑🏻‍💻 opened PR [#279](https://github.com/dropbox/AffectedModuleDetector/pull/279) to [dropbox/AffectedModuleDetector](https://github.com/dropbox/AffectedModuleDetector): "Add support for providing a raw commit SHA to compare against as a new comparison strategy"
+- **2025-01-19** - ⚡️ created branch `ia/add-commit-sha-support-to-extension` on [ivanalvarado/AffectedModuleDetector](https://github.com/ivanalvarado/AffectedModuleDetector)
+- **2025-01-13** - 👀 started watching [gmazzo/gradle-buildconfig-plugin](https://github.com/gmazzo/gradle-buildconfig-plugin)
+- **2025-01-11** - 📝 closed issue [#13](https://github.com/ivanalvarado/android-bootstrap/issues/13) on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Add new line at EOF"
+- **2025-01-11** - 🧑🏻‍💻 merged PR [#14](https://github.com/ivanalvarado/android-bootstrap/pull/14) to [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Add new line breaks to the EOF for project"
+- **2025-01-11** - 🧑🏻‍💻 opened PR [#14](https://github.com/ivanalvarado/android-bootstrap/pull/14) to [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Add new line breaks to the EOF for project"
+- **2025-01-11** - ⚡️ created branch `ia/issue-13` on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap)
+- **2025-01-11** - 📝 opened issue [#13](https://github.com/ivanalvarado/android-bootstrap/issues/13) on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Add new line at EOF"
+- **2025-01-11** - 📝 closed issue [#11](https://github.com/ivanalvarado/android-bootstrap/issues/11) on [ivanalvarado/android-bootstrap](https://github.com/ivanalvarado/android-bootstrap): "Migrate to Hilt"
