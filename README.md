@@ -7,5 +7,3 @@
 - **2025-02-21** - 🧑🏻‍💻 opened PR [#17](https://github.com/ivanalvarado/cache-invalidation-index-plugin/pull/17) to [ivanalvarado/cache-invalidation-index-plugin](https://github.com/ivanalvarado/cache-invalidation-index-plugin): "Add ktlint plugin"
 - **2025-02-21** - ⚡️ created branch `add-ktlint` on [ivanalvarado/cache-invalidation-index-plugin](https://github.com/ivanalvarado/cache-invalidation-index-plugin)
 - **2025-02-20** - 🧑🏻‍💻 merged PR [#16](https://github.com/ivanalvarado/cache-invalidation-index-plugin/pull/16) to [ivanalvarado/cache-invalidation-index-plugin](https://github.com/ivanalvarado/cache-invalidation-index-plugin): "Calculate the Cache Invalidation Index"
-- **2025-02-20** - 🧑🏻‍💻 opened PR [#16](https://github.com/ivanalvarado/cache-invalidation-index-plugin/pull/16) to [ivanalvarado/cache-invalidation-index-plugin](https://github.com/ivanalvarado/cache-invalidation-index-plugin): "Calculate the Cache Invalidation Index"
-- **2025-02-20** - ⚡️ created branch `calculate-cache-invalidation-index` on [ivanalvarado/cache-invalidation-index-plugin](https://github.com/ivanalvarado/cache-invalidation-index-plugin)
