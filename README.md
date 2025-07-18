@@ -9,5 +9,3 @@
 - **2025-07-02** - ⚡️ created branch `feat/output-results-in-json` on [ivanalvarado/baseline-scores-plugin](https://github.com/ivanalvarado/baseline-scores-plugin)
 - **2025-06-24** - 👀 started watching [joshfriend/spotlight](https://github.com/joshfriend/spotlight)
 - **2025-06-18** - 👀 started watching [melix/includegit-gradle-plugin](https://github.com/melix/includegit-gradle-plugin)
-- **2025-06-17** - ⚡️ created branch `main` on [ivanalvarado/baseline-scores-plugin](https://github.com/ivanalvarado/baseline-scores-plugin)
-- **2025-06-17** - ⚡️ created repository `` on [ivanalvarado/baseline-scores-plugin](https://github.com/ivanalvarado/baseline-scores-plugin)
